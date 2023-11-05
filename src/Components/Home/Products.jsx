@@ -37,7 +37,7 @@ const Products = ({product}) => {
     >
       Update
     </Link> 
-    <Link to={`/productDetails/${_id}`}
+    <Link to={`/rooms/${_id}`}
       className="rounded-lg bg-orange-600 px-3 py-2 text-center text-sm font-medium text-white hover:bg-orange-700 "
     >
       Details

@@ -25,7 +25,7 @@ import Intel from './Components/Brand/Intel.jsx';
 import Samsung from './Components/Brand/Samsung.jsx';
 import Sony from './Components/Brand/Sony.jsx';
 import Lenovo from './Components/Brand/Lenovo.jsx';
-import ProductDetails from './Components/Home/ProductDetails.jsx';
+import RoomDetails from './Components/Home/RoomDetails.jsx';
 import Rooms from './Components/Rooms/Rooms.jsx';
 
 const router = createBrowserRouter([
@@ -42,16 +42,16 @@ const router = createBrowserRouter([
 
       },
       {
-        path: '/productDetails/:id',
-        element: <ProtectedRoute> <ProductDetails></ProductDetails></ProtectedRoute>,
-        loader: ({params})=>fetch(`http://localhost:5000/product/${params.id}`),
+        path: '/rooms/:id',
+        element: <ProtectedRoute> <RoomDetails></RoomDetails></ProtectedRoute>,
+        loader: ({params})=>fetch(`http://localhost:5000/rooms/${params.id}`),
         
       },
 
       {
         path: '/Apple',
         element: <Apple></Apple>,
-        loader: ()=>fetch('http://localhost:5000/product'),
+        loader: ()=>fetch('http://localhost:5000/rooms'),
         
       },
       {
