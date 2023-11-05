@@ -1,5 +1,5 @@
-import { useLoaderData } from "react-router-dom";
-import Cards from "./cards";
+// import { useLoaderData } from "react-router-dom";
+// import Cards from "./cards";
 import Offer from "../Offer/Offer";
 import ImageGallery from "./ImageGallery";
 'use client';
@@ -14,7 +14,7 @@ import SliderAdsForHome from "./SliderAdsForHome";
 
 const Home = () => {
 
-const cards = useLoaderData();
+// const cards = useLoaderData();
 useEffect(() => {
     AOS.init();
     AOS.refresh();
@@ -52,10 +52,10 @@ useEffect(() => {
 
 {/* service card start here */}
 
-<div><h2 className="text-center font-bold text-3xl my-12">Discover the Latest in High-Tech Gadgets and Devices</h2></div>
+{/* <div><h2 className="text-center font-bold text-3xl my-12">Discover the Latest in High-Tech Gadgets and Devices</h2></div>
             <div  data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600" className="grid grid-cols-2 gap-8 px-16 pb-10 max-md:grid-cols-1 max-md:px-8 overflow-x-hidden">
                 {cards.map((card) => <Cards key={card.id} card={card}></Cards>)}
-            </div>
+            </div> */}
             
 
 

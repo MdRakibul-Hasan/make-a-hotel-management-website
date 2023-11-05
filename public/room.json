@@ -1,0 +1,550 @@
+[
+    {
+      "title": "Cozy Single Room",
+      "id": 1,
+      "pricePerNight": 100,
+      "imageURL": "https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&q=60&w=900&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aG90ZWwlMjByb29tc3xlbnwwfHwwfHx8MA%3D%3D",
+      "availability": true,
+      "roomSize": "Single",
+      "description": "A cozy single room with a beautiful view of the city. This room is perfect for solo travelers or couples looking for a comfortable stay. The room is equipped with modern amenities and a spacious bed.",
+      "reviews": [
+        {
+          "name": "John Doe",
+          "comment": "Great room and excellent service!",
+          "rating": 4
+        },
+        {
+          "name": "Jane Smith",
+          "comment": "Comfortable bed and clean room.",
+          "rating": 5
+        }
+      ],
+      "bookingStatus": "Available",
+      "dateStates": [
+        {
+          "date": "2023-11-05",
+          "available": true
+        },
+        {
+          "date": "2023-11-06",
+          "available": false
+        }
+      ]
+    },
+    {
+      "title": "Deluxe Double Room",
+      "id": 2,
+      "pricePerNight": 150,
+      "imageURL": "https://images.unsplash.com/photo-1578683010236-d716f9a3f461?auto=format&fit=crop&q=60&w=900&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8aG90ZWwlMjByb29tc3xlbnwwfHwwfHx8MA%3D%3D",
+      "availability": true,
+      "roomSize": "Double",
+      "description": "A spacious and luxurious double room with elegant decor and a stunning city view. This room is perfect for couples or small families looking for a comfortable and relaxing stay. The room features a king-sized bed and modern amenities for an enjoyable experience.",
+      "reviews": [
+        {
+          "name": "Alice Brown",
+          "comment": "Loved the spacious room and the comfortable bed!",
+          "rating": 5
+        },
+        {
+          "name": "Michael Johnson",
+          "comment": "Great value for the price and excellent service.",
+          "rating": 4
+        }
+      ],
+      "bookingStatus": "Available",
+      "dateStates": [
+        {
+          "date": "2023-11-05",
+          "available": true
+        },
+        {
+          "date": "2023-11-06",
+          "available": true
+        }
+      ]
+    },
+    {
+        "title": "Cozy Single Room",
+        "id": 3,
+        "pricePerNight": 100,
+        "imageURL": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&q=60&w=900&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8aG90ZWwlMjByb29tc3xlbnwwfHwwfHx8MA%3D%3D",
+        "availability": true,
+        "roomSize": "Single",
+        "description": "A cozy single room with a beautiful view of the city. This room is perfect for solo travelers or couples looking for a comfortable stay. The room is equipped with modern amenities and a spacious bed.",
+        "reviews": [
+          {
+            "name": "John Doe",
+            "comment": "Great room and excellent service!",
+            "rating": 4
+          },
+          {
+            "name": "Jane Smith",
+            "comment": "Comfortable bed and clean room.",
+            "rating": 5
+          }
+        ],
+        "bookingStatus": "Available",
+        "dateStates": [
+          {
+            "date": "2023-11-05",
+            "available": true
+          },
+          {
+            "date": "2023-11-06",
+            "available": false
+          }
+        ]
+      },
+      {
+        "title": "Cozy Single Room",
+        "id": 4,
+        "pricePerNight": 100,
+        "imageURL": "https://images.unsplash.com/photo-1566665797739-1674de7a421a?auto=format&fit=crop&q=60&w=900&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8aG90ZWwlMjByb29tc3xlbnwwfHwwfHx8MA%3D%3D",
+        "availability": true,
+        "roomSize": "Single",
+        "description": "A cozy single room with a beautiful view of the city. This room is perfect for solo travelers or couples looking for a comfortable stay. The room is equipped with modern amenities and a spacious bed.",
+        "reviews": [
+          {
+            "name": "John Doe",
+            "comment": "Great room and excellent service!",
+            "rating": 4
+          },
+          {
+            "name": "Jane Smith",
+            "comment": "Comfortable bed and clean room.",
+            "rating": 5
+          }
+        ],
+        "bookingStatus": "Available",
+        "dateStates": [
+          {
+            "date": "2023-11-05",
+            "available": true
+          },
+          {
+            "date": "2023-11-06",
+            "available": false
+          }
+        ]
+      },
+      {
+        "title": "Cozy Single Room",
+        "id": 5,
+        "pricePerNight": 100,
+        "imageURL": "https://plus.unsplash.com/premium_photo-1681487479203-464a22302b27?auto=format&fit=crop&q=60&w=900&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8aG90ZWwlMjByb29tc3xlbnwwfHwwfHx8MA%3D%3D",
+        "availability": true,
+        "roomSize": "Single",
+        "description": "A cozy single room with a beautiful view of the city. This room is perfect for solo travelers or couples looking for a comfortable stay. The room is equipped with modern amenities and a spacious bed.",
+        "reviews": [
+          {
+            "name": "John Doe",
+            "comment": "Great room and excellent service!",
+            "rating": 4
+          },
+          {
+            "name": "Jane Smith",
+            "comment": "Comfortable bed and clean room.",
+            "rating": 5
+          }
+        ],
+        "bookingStatus": "Available",
+        "dateStates": [
+          {
+            "date": "2023-11-05",
+            "available": true
+          },
+          {
+            "date": "2023-11-06",
+            "available": false
+          }
+        ]
+      },
+      {
+        "title": "Cozy Single Room",
+        "id": 6,
+        "pricePerNight": 100,
+        "imageURL": "https://images.unsplash.com/photo-1507038772120-7fff76f79d79?auto=format&fit=crop&q=60&w=900&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGhvdGVsJTIwcm9vbXN8ZW58MHx8MHx8fDA%3D",
+        "availability": true,
+        "roomSize": "Single",
+        "description": "A cozy single room with a beautiful view of the city. This room is perfect for solo travelers or couples looking for a comfortable stay. The room is equipped with modern amenities and a spacious bed.",
+        "reviews": [
+          {
+            "name": "John Doe",
+            "comment": "Great room and excellent service!",
+            "rating": 4
+          },
+          {
+            "name": "Jane Smith",
+            "comment": "Comfortable bed and clean room.",
+            "rating": 5
+          }
+        ],
+        "bookingStatus": "Available",
+        "dateStates": [
+          {
+            "date": "2023-11-05",
+            "available": true
+          },
+          {
+            "date": "2023-11-06",
+            "available": false
+          }
+        ]
+      },
+      {
+        "title": "Cozy Single Room",
+        "id": 7,
+        "pricePerNight": 100,
+        "imageURL": "https://images.unsplash.com/photo-1595576508898-0ad5c879a061?auto=format&fit=crop&q=60&w=900&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8aG90ZWwlMjByb29tc3xlbnwwfHwwfHx8MA%3D%3D",
+        "availability": true,
+        "roomSize": "Single",
+        "description": "A cozy single room with a beautiful view of the city. This room is perfect for solo travelers or couples looking for a comfortable stay. The room is equipped with modern amenities and a spacious bed.",
+        "reviews": [
+          {
+            "name": "John Doe",
+            "comment": "Great room and excellent service!",
+            "rating": 4
+          },
+          {
+            "name": "Jane Smith",
+            "comment": "Comfortable bed and clean room.",
+            "rating": 5
+          }
+        ],
+        "bookingStatus": "Available",
+        "dateStates": [
+          {
+            "date": "2023-11-05",
+            "available": true
+          },
+          {
+            "date": "2023-11-06",
+            "available": false
+          }
+        ]
+      },
+      {
+        "title": "Cozy Single Room",
+        "id": 8,
+        "pricePerNight": 100,
+        "imageURL": "https://images.unsplash.com/photo-1631049035182-249067d7618e?auto=format&fit=crop&q=60&w=900&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGhvdGVsJTIwcm9vbXN8ZW58MHx8MHx8fDA%3D",
+        "availability": true,
+        "roomSize": "Single",
+        "description": "A cozy single room with a beautiful view of the city. This room is perfect for solo travelers or couples looking for a comfortable stay. The room is equipped with modern amenities and a spacious bed.",
+        "reviews": [
+          {
+            "name": "John Doe",
+            "comment": "Great room and excellent service!",
+            "rating": 4
+          },
+          {
+            "name": "Jane Smith",
+            "comment": "Comfortable bed and clean room.",
+            "rating": 5
+          }
+        ],
+        "bookingStatus": "Available",
+        "dateStates": [
+          {
+            "date": "2023-11-05",
+            "available": true
+          },
+          {
+            "date": "2023-11-06",
+            "available": false
+          }
+        ]
+      },
+      {
+        "title": "Cozy Single Room",
+        "id": 9,
+        "pricePerNight": 100,
+        "imageURL": "https://images.unsplash.com/photo-1594560913095-8cf34bab82ad?auto=format&fit=crop&q=60&w=900&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGhvdGVsJTIwcm9vbXN8ZW58MHx8MHx8fDA%3D",
+        "availability": true,
+        "roomSize": "Single",
+        "description": "A cozy single room with a beautiful view of the city. This room is perfect for solo travelers or couples looking for a comfortable stay. The room is equipped with modern amenities and a spacious bed.",
+        "reviews": [
+          {
+            "name": "John Doe",
+            "comment": "Great room and excellent service!",
+            "rating": 4
+          },
+          {
+            "name": "Jane Smith",
+            "comment": "Comfortable bed and clean room.",
+            "rating": 5
+          }
+        ],
+        "bookingStatus": "Available",
+        "dateStates": [
+          {
+            "date": "2023-11-05",
+            "available": true
+          },
+          {
+            "date": "2023-11-06",
+            "available": false
+          }
+        ]
+      },
+      {
+        "title": "Cozy Single Room",
+        "id": 10,
+        "pricePerNight": 100,
+        "imageURL": "https://images.unsplash.com/photo-1621293954908-907159247fc8?auto=format&fit=crop&q=60&w=900&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGhvdGVsJTIwcm9vbXN8ZW58MHx8MHx8fDA%3D",
+        "availability": true,
+        "roomSize": "Single",
+        "description": "A cozy single room with a beautiful view of the city. This room is perfect for solo travelers or couples looking for a comfortable stay. The room is equipped with modern amenities and a spacious bed.",
+        "reviews": [
+          {
+            "name": "John Doe",
+            "comment": "Great room and excellent service!",
+            "rating": 4
+          },
+          {
+            "name": "Jane Smith",
+            "comment": "Comfortable bed and clean room.",
+            "rating": 5
+          }
+        ],
+        "bookingStatus": "Available",
+        "dateStates": [
+          {
+            "date": "2023-11-05",
+            "available": true
+          },
+          {
+            "date": "2023-11-06",
+            "available": false
+          }
+        ]
+      },
+      {
+        "title": "Cozy Single Room",
+        "id": 11,
+        "pricePerNight": 100,
+        "imageURL": "https://images.unsplash.com/photo-1605346576608-92f1346b67d6?auto=format&fit=crop&q=60&w=900&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGhvdGVsJTIwcm9vbXN8ZW58MHx8MHx8fDA%3D",
+        "availability": true,
+        "roomSize": "Single",
+        "description": "A cozy single room with a beautiful view of the city. This room is perfect for solo travelers or couples looking for a comfortable stay. The room is equipped with modern amenities and a spacious bed.",
+        "reviews": [
+          {
+            "name": "John Doe",
+            "comment": "Great room and excellent service!",
+            "rating": 4
+          },
+          {
+            "name": "Jane Smith",
+            "comment": "Comfortable bed and clean room.",
+            "rating": 5
+          }
+        ],
+        "bookingStatus": "Available",
+        "dateStates": [
+          {
+            "date": "2023-11-05",
+            "available": true
+          },
+          {
+            "date": "2023-11-06",
+            "available": false
+          }
+        ]
+      },
+      {
+        "title": "Cozy Single Room",
+        "id": 12,
+        "pricePerNight": 100,
+        "imageURL": "https://images.unsplash.com/photo-1619128395560-8a749ac9926d?auto=format&fit=crop&q=60&w=900&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGhvdGVsJTIwcm9vbXN8ZW58MHx8MHx8fDA%3D",
+        "availability": true,
+        "roomSize": "Single",
+        "description": "A cozy single room with a beautiful view of the city. This room is perfect for solo travelers or couples looking for a comfortable stay. The room is equipped with modern amenities and a spacious bed.",
+        "reviews": [
+          {
+            "name": "John Doe",
+            "comment": "Great room and excellent service!",
+            "rating": 4
+          },
+          {
+            "name": "Jane Smith",
+            "comment": "Comfortable bed and clean room.",
+            "rating": 5
+          }
+        ],
+        "bookingStatus": "Available",
+        "dateStates": [
+          {
+            "date": "2023-11-05",
+            "available": true
+          },
+          {
+            "date": "2023-11-06",
+            "available": false
+          }
+        ]
+      },
+      {
+        "title": "Cozy Single Room",
+        "id": 13,
+        "pricePerNight": 100,
+        "imageURL": "https://images.unsplash.com/photo-1608198399988-341f712c3711?auto=format&fit=crop&q=60&w=900&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGhvdGVsJTIwcm9vbXN8ZW58MHx8MHx8fDA%3D",
+        "availability": true,
+        "roomSize": "Single",
+        "description": "A cozy single room with a beautiful view of the city. This room is perfect for solo travelers or couples looking for a comfortable stay. The room is equipped with modern amenities and a spacious bed.",
+        "reviews": [
+          {
+            "name": "John Doe",
+            "comment": "Great room and excellent service!",
+            "rating": 4
+          },
+          {
+            "name": "Jane Smith",
+            "comment": "Comfortable bed and clean room.",
+            "rating": 5
+          }
+        ],
+        "bookingStatus": "Available",
+        "dateStates": [
+          {
+            "date": "2023-11-05",
+            "available": true
+          },
+          {
+            "date": "2023-11-06",
+            "available": false
+          }
+        ]
+      },
+      {
+        "title": "Cozy Single Room",
+        "id": 14,
+        "pricePerNight": 100,
+        "imageURL": "https://images.unsplash.com/photo-1592229505726-ca121723b8ef?auto=format&fit=crop&q=60&w=600&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjJ8fGhvdGVsJTIwcm9vbXN8ZW58MHx8MHx8fDA%3D",
+        "availability": true,
+        "roomSize": "Single",
+        "description": "A cozy single room with a beautiful view of the city. This room is perfect for solo travelers or couples looking for a comfortable stay. The room is equipped with modern amenities and a spacious bed.",
+        "reviews": [
+          {
+            "name": "John Doe",
+            "comment": "Great room and excellent service!",
+            "rating": 4
+          },
+          {
+            "name": "Jane Smith",
+            "comment": "Comfortable bed and clean room.",
+            "rating": 5
+          }
+        ],
+        "bookingStatus": "Available",
+        "dateStates": [
+          {
+            "date": "2023-11-05",
+            "available": true
+          },
+          {
+            "date": "2023-11-06",
+            "available": false
+          }
+        ]
+      },
+      {
+        "title": "Cozy Single Room",
+        "id": 15,
+        "pricePerNight": 100,
+        "imageURL": "https://images.unsplash.com/photo-1609949279531-cf48d64bed89?auto=format&fit=crop&q=60&w=600&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjN8fGhvdGVsJTIwcm9vbXN8ZW58MHx8MHx8fDA%3D",
+        "availability": true,
+        "roomSize": "Single",
+        "description": "A cozy single room with a beautiful view of the city. This room is perfect for solo travelers or couples looking for a comfortable stay. The room is equipped with modern amenities and a spacious bed.",
+        "reviews": [
+          {
+            "name": "John Doe",
+            "comment": "Great room and excellent service!",
+            "rating": 4
+          },
+          {
+            "name": "Jane Smith",
+            "comment": "Comfortable bed and clean room.",
+            "rating": 5
+          }
+        ],
+        "bookingStatus": "Available",
+        "dateStates": [
+          {
+            "date": "2023-11-05",
+            "available": true
+          },
+          {
+            "date": "2023-11-06",
+            "available": false
+          }
+        ]
+      },
+      {
+        "title": "Cozy Single Room",
+        "id": 16,
+        "pricePerNight": 100,
+        "imageURL": "https://images.unsplash.com/photo-1505692952047-1a78307da8f2?auto=format&fit=crop&q=60&w=600&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjd8fGhvdGVsJTIwcm9vbXN8ZW58MHx8MHx8fDA%3D",
+        "availability": true,
+        "roomSize": "Single",
+        "description": "A cozy single room with a beautiful view of the city. This room is perfect for solo travelers or couples looking for a comfortable stay. The room is equipped with modern amenities and a spacious bed.",
+        "reviews": [
+          {
+            "name": "John Doe",
+            "comment": "Great room and excellent service!",
+            "rating": 4
+          },
+          {
+            "name": "Jane Smith",
+            "comment": "Comfortable bed and clean room.",
+            "rating": 5
+          }
+        ],
+        "bookingStatus": "Available",
+        "dateStates": [
+          {
+            "date": "2023-11-05",
+            "available": true
+          },
+          {
+            "date": "2023-11-06",
+            "available": false
+          }
+        ]
+      },
+ 
+  
+    {
+      "title": "Luxury Suite",
+      "id": 17,
+      "pricePerNight": 500,
+      "imageURL": "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?auto=format&fit=crop&q=60&w=600&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzB8fGhvdGVsJTIwcm9vbXN8ZW58MHx8MHx8fDA%3D",
+      "availability": true,
+      "roomSize": "Suite",
+      "description": "Experience the ultimate luxury in our spacious and beautifully designed suite. This suite offers breathtaking panoramic views, a private balcony, and premium amenities for a truly unforgettable stay. Ideal for guests seeking a luxurious and indulgent experience during their visit.",
+      "reviews": [
+        {
+          "name": "Sophia Williams",
+          "comment": "Absolutely stunning suite with top-notch service!",
+          "rating": 5
+        },
+        {
+          "name": "David Miller",
+          "comment": "An incredible experience with exceptional comfort and elegance.",
+          "rating": 5
+        }
+      ],
+      "bookingStatus": "Available",
+      "dateStates": [
+        {
+          "date": "2023-11-05",
+          "available": true
+        },
+        {
+          "date": "2023-11-06",
+          "available": true
+        }
+      ]
+    }
+    
+  ]
+  

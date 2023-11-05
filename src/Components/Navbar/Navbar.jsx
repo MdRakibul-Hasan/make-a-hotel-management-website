@@ -56,11 +56,11 @@ const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
           <NavLink to="/" className={({isActive, isPending}) =>
 isPending ? "pending" : isActive ? "text-orange-600 font-bold" : "text-black"}>Home</NavLink>
 
-            <NavLink to="/addProduct" className={({isActive, isPending}) =>
+            {/* <NavLink to="/addProduct" className={({isActive, isPending}) =>
 isPending ? "pending" : isActive ? "text-orange-600 font-bold" : "text-black"}>Add Product</NavLink>
                         
             <NavLink to="/myCart" className={({isActive, isPending}) =>
-isPending ? "pending" : isActive ? "text-orange-600 font-bold" : "text-black"}>My Cart</NavLink>
+isPending ? "pending" : isActive ? "text-orange-600 font-bold" : "text-black"}>My Cart</NavLink> */}
 
           </div>
 
@@ -123,11 +123,11 @@ isPending ? "pending" : isActive ? "text-orange-600 font-bold" : "text-black"}>M
         <NavLink to="/" className={({isActive, isPending}) =>
 isPending ? "pending" : isActive ? "text-orange-600 font-bold" : "text-black"}>Home</NavLink>
 <br />
-            <NavLink to="/addProduct" className={({isActive, isPending}) =>
+            {/* <NavLink to="/addProduct" className={({isActive, isPending}) =>
 isPending ? "pending" : isActive ? "text-orange-600 font-bold" : "text-black"}>Add Product</NavLink>
    <br />                     
             <NavLink to="/myCart" className={({isActive, isPending}) =>
-isPending ? "pending" : isActive ? "text-orange-600 font-bold" : "text-black"}>My Cart</NavLink>
+isPending ? "pending" : isActive ? "text-orange-600 font-bold" : "text-black"}>My Cart</NavLink> */}
 
 <br />
 

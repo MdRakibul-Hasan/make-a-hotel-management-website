@@ -26,6 +26,7 @@ import Samsung from './Components/Brand/Samsung.jsx';
 import Sony from './Components/Brand/Sony.jsx';
 import Lenovo from './Components/Brand/Lenovo.jsx';
 import ProductDetails from './Components/Home/ProductDetails.jsx';
+import Rooms from './Components/Rooms/Rooms.jsx';
 
 const router = createBrowserRouter([
   {
@@ -37,7 +38,7 @@ const router = createBrowserRouter([
       {
         path: '/',
         element: <Home></Home>,
-        loader: ()=>fetch('/data.json')
+        // loader: ()=>fetch('/data.json')
 
       },
       {
@@ -51,6 +52,12 @@ const router = createBrowserRouter([
         path: '/Apple',
         element: <Apple></Apple>,
         loader: ()=>fetch('http://localhost:5000/product'),
+        
+      },
+      {
+        path: '/rooms',
+        element: <Rooms></Rooms>,
+        loader: ()=>fetch('http://localhost:5000/rooms'),
         
       },
       {
