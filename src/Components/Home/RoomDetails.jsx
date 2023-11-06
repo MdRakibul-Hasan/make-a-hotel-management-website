@@ -22,7 +22,7 @@ const RoomDetails = () => {
     const [checkOutDate, setCheckOutDate] = useState("");
     const [pricePerDay, setPricePerDay] = useState(initialPricePerNight); // Set your default price per night here
     const [price, setPrice] = useState(0);
-    
+    const [roomQuantity, setRoomQuantity] = useState(availableRoom);
     const {user} = useContext(AuthContext);
 
         const handleBookRoom = event =>{
@@ -49,20 +49,90 @@ const RoomDetails = () => {
 
             }
 
-            fetch('http://localhost:5000/bookings', {
-                method: 'POST',
-                headers: {
-                    'content-type': 'application/json'
-                },
-                body: JSON.stringify(order)
-            })
-            .then(res => res.json())
-            .then(data => {
-                console.log(data);
-            })
+            
+                  
+// test
+
+if (roomQuantity <= 0) {
+    Swal.fire({
+        title: 'Error!',
+        text: 'Room is not Available, Already booked, check another Room',
+        icon: 'error',
+        confirmButtonText: 'Back',
+        
+    })
+    return;
+}  else {
+
+    Swal.fire({
+        title: "Are you sure?",
+        text: `Room:${title}, Total Price: ${price}
+        Date: From ${checkIn} to ${checkOut}, Description:${roomSize}` ,
+        icon: "warning",
+        showCancelButton: true,
+        confirmButtonColor: "#3085d6",
+        cancelButtonColor: "#d33",
+        confirmButtonText: "Yes, Booking Now!"
+      }).then((result) => {
+        if (result.isConfirmed) {
 
 
-            console.log(order);
+    /////////////////////////////
+
+    fetch('http://localhost:5000/bookings', {
+        method: 'POST',
+        headers: {
+            'content-type': 'application/json'
+        },
+        body: JSON.stringify(order)
+    })
+    .then(res => res.json())
+    .then(data => {    
+        if(data.insertedId){
+            setRoomQuantity(roomQuantity - 1);
+            Swal.fire(
+                'Good job!',
+                'Room Booked Successful',
+                'success'
+            )
+        }
+    })
+// update the availiblity
+const currentRoom = (roomQuantity -1)
+const newAvailablity = {currentRoom};
+console.log('fetch er age: ',newAvailablity);
+
+    fetch(`http://localhost:5000/rooms/${_id}`, {
+        method: 'PUT',
+        headers: {
+            'content-type' : 'application/json'
+        },
+        body: JSON.stringify(newAvailablity)
+        
+    })
+    .then(res=> res.json())
+    .then(data =>{
+        console.log(data);
+        console.log(`http://localhost:5000/rooms/${_id}`);
+        if(data.modifiedCount > 0){
+            // Swal.fire({
+            //     title: 'Success!',
+            //     text: 'Product Updated Successfully',
+            //     icon: 'success',
+            //     confirmButtonText: 'Ok'
+            //   })
+            console.log("Availablity modification done");
+        }
+    })
+
+}
+
+
+                });
+ 
+            }
+
+       
         }
     
 
@@ -128,7 +198,11 @@ const RoomDetails = () => {
 
 
                     <p className=" text-sm"><span className="font-bold">Room-Size: </span>{roomSize}</p>
-                    <p className=" text-sm font-bold">Price Per Night: <span className="font-bold  text-red-600">${pricePerNight}</span>
+                    <p className=" text-sm font-bold">Price Per Night: 
+                    <span className="font-bold  text-red-600">${pricePerNight}</span>
+                    </p>
+                    <p className=" text-sm font-bold">Availability:  
+                    <span className="font-bold  text-red-600"> {roomQuantity}</span>
                     </p>
 
                     <p className=" text-sm"><span className="font-bold">Description: </span>{description}</p>
