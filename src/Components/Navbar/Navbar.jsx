@@ -59,9 +59,13 @@ isPending ? "pending" : isActive ? "text-orange-600 font-bold" : "text-black"}>H
             {/* <NavLink to="/addProduct" className={({isActive, isPending}) =>
 isPending ? "pending" : isActive ? "text-orange-600 font-bold" : "text-black"}>Add Product</NavLink>
                         
-            <NavLink to="/myCart" className={({isActive, isPending}) =>
+            <NavLink to="/bookings" className={({isActive, isPending}) =>
 isPending ? "pending" : isActive ? "text-orange-600 font-bold" : "text-black"}>My Cart</NavLink> */}
-
+{
+  user?.email ?
+  <Link to="/bookings"> My Bookings</Link>
+  : ""
+}
           </div>
 
  

@@ -154,7 +154,16 @@ console.log('fetch er age: ',newAvailablity);
         const nights = Math.round(Math.abs((startDate - endDate) / oneDay));
         const calculatedPrice = pricePerDay * nights;
         setPrice(calculatedPrice);
+        if(startDate === endDate){
+            setPrice(pricePerNight);
+        }
+        
     };
+
+
+
+
+
 
     // const idInt = parseInt(_id);
     const navigate = useNavigate();
@@ -262,7 +271,8 @@ console.log('fetch er age: ',newAvailablity);
                             <label className="label">
                             <span className="label-text">Total Price:</span>
                         </label>
-                            <input type="number" name="price" className="input input-bordered" required
+                            <input type="number" name="price" className="input input-bordered" required 
+                            
                         value={price} readOnly onChange={(e) => setPricePerDay(parseInt(e.target.value) || 0)} />
                             </div>
                 </div>

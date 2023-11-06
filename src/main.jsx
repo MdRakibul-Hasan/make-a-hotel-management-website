@@ -27,6 +27,7 @@ import Sony from './Components/Brand/Sony.jsx';
 import Lenovo from './Components/Brand/Lenovo.jsx';
 import RoomDetails from './Components/Home/RoomDetails.jsx';
 import Rooms from './Components/Rooms/Rooms.jsx';
+import MyBookings from './Components/MyBookings.jsx';
 
 const router = createBrowserRouter([
   {
@@ -47,11 +48,17 @@ const router = createBrowserRouter([
         loader: ({params})=>fetch(`http://localhost:5000/rooms/${params.id}`),
         
       },
+      {
+        path: 'bookings',
+        element: <ProtectedRoute><MyBookings></MyBookings></ProtectedRoute>,
+        
+        
+      },
 
       {
         path: '/Apple',
         element: <Apple></Apple>,
-        loader: ()=>fetch('http://localhost:5000/rooms'),
+        loader: ()=>fetch('http://localhost:5000/product'),
         
       },
       {
