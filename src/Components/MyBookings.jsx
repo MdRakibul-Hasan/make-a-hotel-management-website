@@ -53,22 +53,22 @@ const MyBookings = () => {
       });
 }
 
-const handleUpdate = id => {
-    fetch(`http://localhost:5000/bookings/${id}`, {
-        method: 'PATCH',
-        headers:{
-            'content-type': 'application/json'
-        },
-        body: JSON.stringify({status: 'confirm'})
-    })
-    .then(res => res.json())
-    .then(data => {
-        console.log(data);
-        if(data.modifiedCount > 0){
-            console.log('update a dhukse');
-        }
-    })
-}
+// const handleUpdate = id => {
+//     fetch(`http://localhost:5000/bookings/${id}`, {
+//         method: 'PATCH',
+//         headers:{
+//             'content-type': 'application/json'
+//         },
+//         body: JSON.stringify({status: 'confirm'})
+//     })
+//     .then(res => res.json())
+//     .then(data => {
+//         console.log(data);
+//         if(data.modifiedCount > 0){
+//             console.log('update a dhukse');
+//         }
+//     })
+// }
 
 
 

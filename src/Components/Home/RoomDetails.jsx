@@ -35,6 +35,7 @@ const RoomDetails = () => {
             const roomName = form.room.value;
             const checkIn = form.checkin.value;
             const checkOut = form.checkout.value;
+            const orderStatus = 'Active';
 
             const order = {
                 customerName: name,
@@ -46,6 +47,9 @@ const RoomDetails = () => {
                 checkInDate: checkIn,
                 checkOutDate: checkOut,
                 roomImage: imageURL,
+                orderStatus,
+                pricePerNight,
+                roomQuantity,
 
             }
 
@@ -100,7 +104,6 @@ if (roomQuantity <= 0) {
 // update the availiblity
 const currentRoom = (roomQuantity -1)
 const newAvailablity = {currentRoom};
-console.log('fetch er age: ',newAvailablity);
 
     fetch(`http://localhost:5000/rooms/${_id}`, {
         method: 'PUT',
@@ -137,15 +140,57 @@ console.log('fetch er age: ',newAvailablity);
     
 
 
-    const handleCheckInChange = (event) => {
-        setCheckInDate(event.target.value);
-        updatePrice(event.target.value, checkOutDate);
-    };
+        const handleCheckInChange = (event) => {
+            // setCheckInDate(event.target.value);
+            // updatePrice(event.target.value, checkoutDate);
+            const selectedDate = new Date(event.target.value);
+            const currentDate = new Date();
+        
+            if (selectedDate >= currentDate) {
+                setCheckInDate(currentDate);
+                updatePrice(event.target.value, checkOutDate);
+            } else {
+                const nextDate = new Date(currentDate);
+                nextDate.setDate(currentDate.getDate() + 1); // Set to the next day
+        
+                const nextDateISO = nextDate.toISOString().split('T')[0];
+                setCheckInDate(nextDateISO);
+        
+                Swal.fire({
+                    icon: "error",
+                    title: "Oops...",
+                    text: "Please select a future date",
+                
+                  });
+            }
+    
+    
+    
+        };
 
-    const handleCheckOutChange = (event) => {
-        setCheckOutDate(event.target.value);
-        updatePrice(checkInDate, event.target.value);
-    };
+        const handleCheckOutChange = (event) => {
+            const selectedDate = new Date(event.target.value);
+            const currentDate = new Date();
+        
+            if (selectedDate >= currentDate) {
+                setCheckOutDate(event.target.value);
+                updatePrice(checkInDate, event.target.value);
+            } else {
+                const nextDate = new Date(currentDate);
+                nextDate.setDate(currentDate.getDate() + 1); // Set to the next day
+        
+                const nextDateISO = nextDate.toISOString().split('T')[0];
+                setCheckOutDate(nextDateISO);
+                Swal.fire({
+                    icon: "error",
+                    title: "Oops...",
+                    text: "Please select a future date",
+                
+                  });
+            }
+    
+    
+        };
 
     const updatePrice = (checkIn, checkOut) => {
         const oneDay = 24 * 60 * 60 * 1000; // hours * minutes * seconds * milliseconds
@@ -165,31 +210,31 @@ console.log('fetch er age: ',newAvailablity);
 
 
 
-    // const idInt = parseInt(_id);
+    // // const idInt = parseInt(_id);
     const navigate = useNavigate();
-    const handleClickOnAddToCart = () => {
-        const storedProductIds = getStoredProductData();
+    // const handleClickOnAddToCart = () => {
+    //     const storedProductIds = getStoredProductData();
 
-        const myObject = product;
-        const idArray = storedProductIds;
+    //     const myObject = product;
+    //     const idArray = storedProductIds;
 
-        if (idArray.includes(myObject._id)) {
-            Swal.fire({
-                title: 'Error!',
-                text: 'You have already Booked this room',
-                icon: 'error',
-                confirmButtonText: 'Back'
-            })
-        } else {
-            saveProduct(_id);
-            Swal.fire(
-                'Good job!',
-                'Room Booked Successful',
-                'success'
-            )
-        }
+    //     if (idArray.includes(myObject._id)) {
+    //         Swal.fire({
+    //             title: 'Error!',
+    //             text: 'You have already Booked this room',
+    //             icon: 'error',
+    //             confirmButtonText: 'Back'
+    //         })
+    //     } else {
+    //         saveProduct(_id);
+    //         Swal.fire(
+    //             'Good job!',
+    //             'Room Booked Successful',
+    //             'success'
+    //         )
+    //     }
 
-    }
+    // }
 
 
 
@@ -216,7 +261,7 @@ console.log('fetch er age: ',newAvailablity);
 
                     <p className=" text-sm"><span className="font-bold">Description: </span>{description}</p>
                     <div className="flex gap-2">
-                        <button onClick={handleClickOnAddToCart} className=" bg-red-500 text-white px-2 py-1 rounded-lg w-[30%] mt-4">Book Now</button>
+                        {/* <button onClick={handleClickOnAddToCart} className=" bg-red-500 text-white px-2 py-1 rounded-lg w-[30%] mt-4">Book Now</button> */}
                         <button onClick={() => navigate(-1)} className=" bg-red-500 text-white px-2 py-1 rounded-lg w-[30%] mt-4">Visit More</button>
 
                     </div>
@@ -258,14 +303,36 @@ console.log('fetch er age: ',newAvailablity);
                             <label className="label">
                             <span className="label-text">Check-in Date:</span>
                         </label>
-                            <input type="date" name="checkin" value={checkInDate} onChange={handleCheckInChange}  className="input input-bordered" required />
+                            {/* <input type="date" name="checkin" 
+                            value={checkInDate} onChange={handleCheckInChange} 
+                            className="input input-bordered" required /> */}
+                            <input
+                            type="date"
+                            name="checkin"
+                            defaultValue={checkInDate}
+                            onChange={handleCheckInChange}
+                            min={new Date().toISOString().split('T')[0]}
+                            className="input input-bordered"
+                            required
+                        />
                             </div>
                     <div className="form-control">
                     <label className="label">
                             <span className="label-text">Check-out Date:</span>
                         </label>
                             
-                            <input type="date" name="checkout" value={checkOutDate} onChange={handleCheckOutChange} className="input input-bordered" required/>
+                            {/* <input type="date" name="checkout" value={checkOutDate}
+                             onChange={handleCheckOutChange} 
+                             className="input input-bordered" required/> */}
+                              <input
+                            type="date"
+                            name="checkout"
+                            defaultValue={checkOutDate}
+                            onChange={handleCheckOutChange}
+                            min={new Date().toISOString().split('T')[0]}
+                            className="input input-bordered"
+                            required
+                        />
                             </div>
                             <div className="form-control">
                             <label className="label">
