@@ -1,5 +1,7 @@
 # Logs
+node_modules
 .env
+.vercel
 
 logs
 *.log
