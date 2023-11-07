@@ -28,6 +28,7 @@ import Lenovo from './Components/Brand/Lenovo.jsx';
 import RoomDetails from './Components/Home/RoomDetails.jsx';
 import Rooms from './Components/Rooms/Rooms.jsx';
 import MyBookings from './Components/MyBookings.jsx';
+import UpdateBookings from './Components/UpdateBookings.jsx';
 
 const router = createBrowserRouter([
   {
@@ -52,6 +53,12 @@ const router = createBrowserRouter([
         path: 'bookings',
         element: <ProtectedRoute><MyBookings></MyBookings></ProtectedRoute>,
         
+        
+      },
+      {
+        path: '/updateBookings/:id',
+        element: <UpdateBookings></UpdateBookings>,
+        loader: ({params})=>fetch(`http://localhost:5000/bookings/${params.id}`),
         
       },
 
