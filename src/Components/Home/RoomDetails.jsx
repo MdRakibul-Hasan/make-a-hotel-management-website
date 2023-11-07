@@ -206,35 +206,8 @@ const newAvailablity = {currentRoom};
     };
 
 
-
-
-
-
-    // // const idInt = parseInt(_id);
     const navigate = useNavigate();
-    // const handleClickOnAddToCart = () => {
-    //     const storedProductIds = getStoredProductData();
 
-    //     const myObject = product;
-    //     const idArray = storedProductIds;
-
-    //     if (idArray.includes(myObject._id)) {
-    //         Swal.fire({
-    //             title: 'Error!',
-    //             text: 'You have already Booked this room',
-    //             icon: 'error',
-    //             confirmButtonText: 'Back'
-    //         })
-    //     } else {
-    //         saveProduct(_id);
-    //         Swal.fire(
-    //             'Good job!',
-    //             'Room Booked Successful',
-    //             'success'
-    //         )
-    //     }
-
-    // }
 
 
 
@@ -375,6 +348,7 @@ const newAvailablity = {currentRoom};
                             })}
                         </div>
                         <p>{review.comment}</p>
+                        <p>{review.timestamp}</p>
 
                         <hr />
                     </div>

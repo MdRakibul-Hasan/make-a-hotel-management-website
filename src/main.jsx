@@ -29,6 +29,7 @@ import RoomDetails from './Components/Home/RoomDetails.jsx';
 import Rooms from './Components/Rooms/Rooms.jsx';
 import MyBookings from './Components/MyBookings.jsx';
 import UpdateBookings from './Components/UpdateBookings.jsx';
+import Review from './Components/Review.jsx';
 
 const router = createBrowserRouter([
   {
@@ -59,6 +60,12 @@ const router = createBrowserRouter([
         path: '/updateBookings/:id',
         element: <UpdateBookings></UpdateBookings>,
         loader: ({params})=>fetch(`http://localhost:5000/bookings/${params.id}`),
+        
+      },
+      {
+        path: '/review/:id',
+        element: <Review></Review>,
+        loader: ({params})=>fetch(`http://localhost:5000/rooms/${params.id}`),
         
       },
 

@@ -5,6 +5,7 @@ import Swal from "sweetalert2";
 
 const BookingDetailsCard = ({booking, handleDelete, }) => {
     const {_id, roomName, price, checkInDate,
+        service_id,
         checkOutDate, roomImage, phone, orderStatus} = booking;
 
 
@@ -28,9 +29,9 @@ const BookingDetailsCard = ({booking, handleDelete, }) => {
             <Link to={`/updateBookings/${_id}`}><button className=" bg-red-500 hover:bg-red-700 flex justify-center
             items-center px-4 py-2 text-sm font-medium w-full
             text-center text-white rounded-md">Update Date</button></Link>
-            <button className=" bg-red-500 hover:bg-red-700 flex justify-center
-            items-center px-4 py-2 text-sm font-medium w-full 
-            text-center text-white rounded-md">Review</button>
+            <Link to={`/review/${service_id}`}><button className=" bg-red-500 hover:bg-red-700 flex justify-center
+            items-center px-8 py-2 text-sm font-medium w-full 
+            text-center text-white rounded-md">Review</button></Link>
             </div>
 
 
