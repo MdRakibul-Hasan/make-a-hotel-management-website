@@ -2,6 +2,8 @@ import { useContext, useEffect, useState } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
 import { AuthContext } from "./Services/AuthProvider";
 import Swal from "sweetalert2";
+import { Helmet } from "react-helmet";
+import ScrollToTop from "./ScrollToTop";
 
 const Review = () => {
     const { user } = useContext(AuthContext);
@@ -47,7 +49,7 @@ const name = `${user?.displayName}`;
     };
 
     return (
-        <div>
+        <div><ScrollToTop /> <Helmet><title>Review</title></Helmet>
             <h2 className=" text-center mt-20 font-semibold pb-4 pt-2 
             text-lg">Leave Comment & Review below</h2>
             <div className="max-w-[500px] mx-auto px-10 pb-8">

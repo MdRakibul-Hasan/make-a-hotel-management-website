@@ -191,7 +191,7 @@ notify();
         return (
 <div
       className="bg-cover min-h-screen flex items-center justify-center"
-      style={{ backgroundImage: 'url(https://ebook.projectbd.com/wp-content/uploads/2023/10/loginpagebg.jpg)' }}> <Helmet><title>Login</title></Helmet>
+      style={{ backgroundImage: 'url(https://ebook.projectbd.com/wp-content/uploads/2023/11/new-login-for-restuarent.jpg)' }}> <Helmet><title>Login</title></Helmet>
       <ToastContainer />
       <div className="bg-black bg-opacity-50 p-4 my-24 sm:p-8 rounded-lg shadow-md w-full sm:w-96">
         <h2 className="text-3xl text-white font-semibold mb-4 mt-2 text-center">Login</h2>

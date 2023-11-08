@@ -2,6 +2,7 @@ import { useContext, useState } from "react";
 import { useLoaderData } from "react-router-dom";
 import { AuthContext } from "./Services/AuthProvider";
 import Swal from "sweetalert2";
+import { Helmet } from "react-helmet";
 
 
 const UpdateBookings = () => {
@@ -250,7 +251,7 @@ const UpdateBookings = () => {
   
 
     return (
-        <div>
+        <div><Helmet><title>Update Booking</title></Helmet>
             <h2 className=" text-2xl mt-14 font-semibold text-center
             p-8">Update Booking Information</h2>
 

@@ -112,7 +112,7 @@ createUser(email, password, name, image)
     return (
       <div
       className="bg-cover min-h-screen flex items-center justify-center"
-      style={{ backgroundImage: 'url(https://ebook.projectbd.com/wp-content/uploads/2023/10/register-bg-iage.jpg)' }}>
+      style={{ backgroundImage: 'url(https://ebook.projectbd.com/wp-content/uploads/2023/11/registernew.jpg)' }}>
         <Helmet><title>Register</title></Helmet>
       <ToastContainer />
       <div className="bg-black bg-opacity-50 p-4 my-24 sm:p-8 rounded-lg shadow-md w-full sm:w-96">
@@ -134,7 +134,7 @@ createUser(email, password, name, image)
     />
   </div>
 
-  <div className="mb-4">
+  {/* <div className="mb-4">
     <label className="block text-white">Profile Picture</label>
     <input
     className="border border-gray-300 p-2 w-full rounded bg-white"
@@ -143,7 +143,7 @@ createUser(email, password, name, image)
       onChange={(e) => setImage(e.target.files[0])}
       required
     />
-  </div>
+  </div> */}
           
           <div className="mb-4">
             <label className="block text-white">

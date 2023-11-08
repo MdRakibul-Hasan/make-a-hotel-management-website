@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import ScrollToTop from "./ScrollToTop";
 import Swal from "sweetalert2";
+import { Helmet } from "react-helmet";
 
 
 const BookingDetailsCard = ({booking, handleDelete, }) => {
@@ -12,6 +13,7 @@ const BookingDetailsCard = ({booking, handleDelete, }) => {
 
     return (
         <div><ScrollToTop />
+        <Helmet><title>Booking Details</title></Helmet>
 
 <div className=" max-md:flex-col max-md:items-center flex justify-between bg-slate-100 rounded-lg p-3">
             <img className="w-[150px] rounded-lg" src={roomImage}/>
