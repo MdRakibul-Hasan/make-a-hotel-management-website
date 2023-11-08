@@ -27,7 +27,7 @@ useEffect(() => {
         <div><ScrollToTop />
 <Helmet><title>Home</title></Helmet>
 
-<div className="para">
+<div className="mt-14">
 <Parallax strength={300} className="parallax"
 bgImage="https://ebook.projectbd.com/wp-content/uploads/2023/11/home-image-1.jpg">
   <div className="content">
@@ -179,7 +179,7 @@ bgImage="https://ebook.projectbd.com/wp-content/uploads/2023/11/home-image-1.jpg
       </div>
       {/* --------------------- */}
       <div className="flex flex-col h-[80vh] max-md:h-[70vh] justify-center items-center border-2 p-5 gap-2">
-        <img className=" rounded-full w-[55%] max-md:w-[25%]" src="https://ebook.projectbd.com/wp-content/uploads/2023/11/test1.jpg" />
+        <img className=" rounded-full w-[55%]" src="https://ebook.projectbd.com/wp-content/uploads/2023/11/test1.jpg" />
         <div className="rating rating-sm">
   <input type="radio" name="rating-5" className="mask mask-star-2 bg-orange-400" />
   <input type="radio" name="rating-5" className="mask mask-star-2 bg-orange-400" />

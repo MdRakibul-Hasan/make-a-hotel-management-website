@@ -48,7 +48,7 @@ const name = `${user?.displayName}`;
 
     return (
         <div>
-            <h2 className=" text-center font-semibold pb-4 pt-2 
+            <h2 className=" text-center mt-20 font-semibold pb-4 pt-2 
             text-lg">Leave Comment & Review below</h2>
             <div className="max-w-[500px] mx-auto px-10 pb-8">
             <form onSubmit={addReview}>

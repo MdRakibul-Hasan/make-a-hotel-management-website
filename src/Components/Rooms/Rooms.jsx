@@ -9,7 +9,7 @@ const Rooms = () => {
 
     return (
         <div><ScrollToTop />
-       <div className="grid md:grid-cols-2 gap-6 mx-10 py-16">
+       <div className="grid md:grid-cols-2 mt-14 gap-6 mx-10 py-16">
 
 {availableRooms.map(room => (
       <AvailableRooms key={room._id} room={room} />

@@ -215,7 +215,7 @@ const newAvailablity = {currentRoom};
         <div>
             <ScrollToTop />
 
-            <div className="flex justify-center items-center w-full pb-5 px-10 mt-10 max-md:flex-col max-md:px-3">
+            <div className="flex justify-center mt-20 items-center w-full pb-5 px-10 max-md:flex-col max-md:px-3">
                 <div className="w-1/2 max-md:w-full flex justify-center items-center">
                     <img className="w-[80%]" src={imageURL} />
                 </div>

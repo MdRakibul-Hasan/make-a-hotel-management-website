@@ -44,17 +44,19 @@ const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 <div>
 <ToastContainer />
 
-<nav className="bg-orange-100 bg-opacity-100 sticky w-full z-20">
+<nav className=" bg-slate-950 bg-opacity-100 fixed w-full z-20 top-0">
       <div className="container mx-auto py-2">
         <div className="flex items-center justify-between">
          
-          <div> <Link to="/"><img className="w-[30%]" src="https://ebook.projectbd.com/wp-content/uploads/2023/10/hitech-logo-1.png" alt="" /></Link> </div>
+          <div> <Link to="/"><img className="w-[30%]" src="https://ebook.projectbd.com/wp-content/uploads/2023/11/hotel-logo.png" alt="" /></Link> </div>
 
          
           <div className="hidden md:flex space-x-4">
 
           <NavLink to="/" className={({isActive, isPending}) =>
-isPending ? "pending" : isActive ? "text-orange-600 font-bold" : "text-black"}>Home</NavLink>
+isPending ? "pending" : isActive ? "text-orange-500 font-bold" : "text-white"}>Home</NavLink>
+          <NavLink to="/rooms" className={({isActive, isPending}) =>
+isPending ? "pending" : isActive ? "text-orange-500 font-bold" : "text-white"}>Rooms</NavLink>
 
             {/* <NavLink to="/addProduct" className={({isActive, isPending}) =>
 isPending ? "pending" : isActive ? "text-orange-600 font-bold" : "text-black"}>Add Product</NavLink>
@@ -63,12 +65,13 @@ isPending ? "pending" : isActive ? "text-orange-600 font-bold" : "text-black"}>A
 isPending ? "pending" : isActive ? "text-orange-600 font-bold" : "text-black"}>My Cart</NavLink> */}
 {
   user?.email ?
-  <Link to="/bookings"> My Bookings</Link>
+  <NavLink to="/bookings" className={({isActive, isPending}) =>
+isPending ? "pending" : isActive ? "text-orange-500 font-bold" : "text-white"}>My Bookings</NavLink>
   : ""
 }
           </div>
 
- 
+{/*  
 
 <div className="flex justify-center items-center mx-1 max-md:hidden">
 {
@@ -92,7 +95,7 @@ isPending ? "pending" : isActive ? "text-orange-600 font-bold" : "text-black"}>M
 
 
 
-</div>
+</div> */}
 
 
          
@@ -105,10 +108,10 @@ isPending ? "pending" : isActive ? "text-orange-600 font-bold" : "text-black"}>M
  }
 
          
-  <div className="md:hidden">
+  <div className="md:hidden mr-3">
     <button
       onClick={toggleMobileMenu}
-      className="text-black focus:outline-none"
+      className="text-white focus:outline-none"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none"
@@ -124,8 +127,12 @@ isPending ? "pending" : isActive ? "text-orange-600 font-bold" : "text-black"}>M
 
 
         <div className={`md:hidden ${mobileMenuOpen ? 'block' : 'hidden'}`}>
+        <div className="max-md:mx-3">
         <NavLink to="/" className={({isActive, isPending}) =>
-isPending ? "pending" : isActive ? "text-orange-600 font-bold" : "text-black"}>Home</NavLink>
+isPending ? "pending" : isActive ? "text-orange-600 font-bold" : "text-white"}>Home</NavLink>
+<br />
+<NavLink to="/rooms" className={({isActive, isPending}) =>
+isPending ? "pending" : isActive ? "text-orange-500 font-bold" : "text-white"}>Rooms</NavLink>
 <br />
             {/* <NavLink to="/addProduct" className={({isActive, isPending}) =>
 isPending ? "pending" : isActive ? "text-orange-600 font-bold" : "text-black"}>Add Product</NavLink>
@@ -133,9 +140,9 @@ isPending ? "pending" : isActive ? "text-orange-600 font-bold" : "text-black"}>A
             <NavLink to="/myCart" className={({isActive, isPending}) =>
 isPending ? "pending" : isActive ? "text-orange-600 font-bold" : "text-black"}>My Cart</NavLink> */}
 
-<br />
 
-<div className="flex my-2">
+
+{/* <div className="flex my-2">
 {
  user ? 
  <img className=" bg-white rounded-full w-[6vh] mx-1" src={user.photoURL} alt="" />
@@ -155,19 +162,26 @@ isPending ? "pending" : isActive ? "text-orange-600 font-bold" : "text-black"}>M
 
 
 
-</div>
+</div> */}
+{
+  user?.email ?
+  <NavLink to="/bookings" className={({isActive, isPending}) =>
+isPending ? "pending" : isActive ? "text-orange-500 font-bold" : "text-white"}>My Bookings</NavLink>
+  : ""
+}
 
-
-
+<br />
+<br />
           {
  user ? 
-<Link onClick={handleSignOut} to="/login" className="bg-black text-white py-1 px-4 rounded-lg mt-2 hover:bg-slate-700">Log Out</Link>
+<Link onClick={handleSignOut} to="/login" className="bg-white text-black py-1 px-4 rounded-lg mt-2 hover:bg-slate-300">Log Out</Link>
     :
- <Link to="/login" className="bg-black text-white py-1 px-4 rounded-lg mt-2 hover:bg-slate-700">Login</Link>
+ <Link to="/login" className="bg-white text-black py-1 px-4 rounded-lg mt-2 hover:bg-slate-300">Login</Link>
 
  }
 
 
+        </div>
 
         </div>
       </div>

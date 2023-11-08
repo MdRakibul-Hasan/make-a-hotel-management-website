@@ -75,7 +75,7 @@ const MyBookings = () => {
 
     return (
         <div>
-            <h2 className="text-2xl text-center pt-5 font-semibold">Your Bookings Quantity: {bookings.length}</h2>
+            <h2 className="text-2xl text-center mt-14 pt-5 font-semibold">Your Bookings Quantity: {bookings.length}</h2>
             <div className="max-w-[1200px] mx-auto p-4 flex flex-col gap-2">
                         {
                             bookings.map(booking => <BookingDetailsCard

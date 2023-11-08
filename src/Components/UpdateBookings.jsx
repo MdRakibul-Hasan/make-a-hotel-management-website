@@ -251,7 +251,7 @@ const UpdateBookings = () => {
 
     return (
         <div>
-            <h2 className=" text-2xl font-semibold text-center
+            <h2 className=" text-2xl mt-14 font-semibold text-center
             p-8">Update Booking Information</h2>
 
             <form onSubmit={handleUpdateBookRoom} >
