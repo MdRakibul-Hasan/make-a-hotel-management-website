@@ -19,7 +19,7 @@ const name = `${user?.displayName}`;
         const reviewData = { username, rating, comment };
         console.log(reviewData);
 
-        fetch(`http://localhost:5000/rooms/${id}`, {
+        fetch(`https://ass11-hotel-server1.vercel.app/rooms/${id}`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

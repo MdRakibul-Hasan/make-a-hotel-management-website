@@ -47,7 +47,7 @@ const router = createBrowserRouter([
       {
         path: '/rooms/:id',
         element: <ProtectedRoute> <RoomDetails></RoomDetails></ProtectedRoute>,
-        loader: ({params})=>fetch(`http://localhost:5000/rooms/${params.id}`),
+        loader: ({params})=>fetch(`https://ass11-hotel-server1.vercel.app/rooms/${params.id}`),
         
       },
       {
@@ -59,56 +59,56 @@ const router = createBrowserRouter([
       {
         path: '/updateBookings/:id',
         element: <ProtectedRoute><UpdateBookings></UpdateBookings></ProtectedRoute>,
-        loader: ({params})=>fetch(`http://localhost:5000/bookings/${params.id}`),
+        loader: ({params})=>fetch(`https://ass11-hotel-server1.vercel.app/bookings/${params.id}`),
         
       },
       {
         path: '/review/:id',
         element: <UpdateBookings><Review></Review></UpdateBookings>,
-        loader: ({params})=>fetch(`http://localhost:5000/rooms/${params.id}`),
+        loader: ({params})=>fetch(`https://ass11-hotel-server1.vercel.app/rooms/${params.id}`),
         
       },
 
       {
         path: '/Apple',
         element: <Apple></Apple>,
-        loader: ()=>fetch('http://localhost:5000/product'),
+        loader: ()=>fetch('https://ass11-hotel-server1.vercel.app/product'),
         
       },
       {
         path: '/rooms',
         element: <Rooms></Rooms>,
-        loader: ()=>fetch('http://localhost:5000/rooms'),
+        loader: ()=>fetch('https://ass11-hotel-server1.vercel.app/rooms'),
         
       },
       {
         path: '/Google',
         element: <Google></Google>,
-        loader: ()=>fetch('http://localhost:5000/product'),
+        loader: ()=>fetch('https://ass11-hotel-server1.vercel.app/product'),
         
       },
       {
         path: '/Intel',
         element: <Intel></Intel>,
-        loader: ()=>fetch('http://localhost:5000/product'),
+        loader: ()=>fetch('https://ass11-hotel-server1.vercel.app/product'),
         
       },
       {
         path: '/Samsung',
         element: <Samsung></Samsung>,
-        loader: ()=>fetch('http://localhost:5000/product'),
+        loader: ()=>fetch('https://ass11-hotel-server1.vercel.app/product'),
         
       },
       {
         path: '/Sony',
         element: <Sony></Sony>,
-        loader: ()=>fetch('http://localhost:5000/product'),
+        loader: ()=>fetch('https://ass11-hotel-server1.vercel.app/product'),
         
       },
       {
         path: '/Lenovo',
         element: <Lenovo></Lenovo>,
-        loader: ()=>fetch('http://localhost:5000/product'),
+        loader: ()=>fetch('https://ass11-hotel-server1.vercel.app/product'),
         
       },
       {
@@ -120,13 +120,13 @@ const router = createBrowserRouter([
       {
         path: '/myCart',
         element: <ProtectedRoute> <MyCart></MyCart> </ProtectedRoute>,
-        loader: ()=>fetch('http://localhost:5000/product'),
+        loader: ()=>fetch('https://ass11-hotel-server1.vercel.app/product'),
         
       },
       {
         path: '/updateProduct/:id',
         element: <ProtectedRoute><UpdateProduct></UpdateProduct></ProtectedRoute>,
-        loader: ({params})=>fetch(`http://localhost:5000/product/${params.id}`)
+        loader: ({params})=>fetch(`https://ass11-hotel-server1.vercel.app/product/${params.id}`)
         
       },
 

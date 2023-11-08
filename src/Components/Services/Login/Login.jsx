@@ -69,7 +69,7 @@ navigate(location?.state ? location.state : '/');
 const loggedInUser = result.user;
 const user = { email };
 
-axios.post('http://localhost:5000/jwt', loggedInUser, {withCredentials:true})
+axios.post('https://ass11-hotel-server1.vercel.app/jwt', loggedInUser, {withCredentials:true})
       .then(res =>{
         console.log('token response',res.data);
 

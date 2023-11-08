@@ -83,7 +83,7 @@ if (roomQuantity <= 0) {
 
     /////////////////////////////
 
-    fetch('http://localhost:5000/bookings', {
+    fetch('https://ass11-hotel-server1.vercel.app/bookings', {
         method: 'POST',
         headers: {
             'content-type': 'application/json'
@@ -105,7 +105,7 @@ if (roomQuantity <= 0) {
 const currentRoom = (roomQuantity -1)
 const newAvailablity = {currentRoom};
 
-    fetch(`http://localhost:5000/rooms/${_id}`, {
+    fetch(`https://ass11-hotel-server1.vercel.app/rooms/${_id}`, {
         method: 'PUT',
         headers: {
             'content-type' : 'application/json'
@@ -116,7 +116,7 @@ const newAvailablity = {currentRoom};
     .then(res=> res.json())
     .then(data =>{
         console.log(data);
-        console.log(`http://localhost:5000/rooms/${_id}`);
+        console.log(`https://ass11-hotel-server1.vercel.app/rooms/${_id}`);
         if(data.modifiedCount > 0){
             // Swal.fire({
             //     title: 'Success!',

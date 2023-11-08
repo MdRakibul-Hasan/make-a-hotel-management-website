@@ -48,7 +48,7 @@ const UpdateBookings = () => {
 
         }
         // send update data to the backend
-        fetch(`http://localhost:5000/bookings/${_id}`, {
+        fetch(`https://ass11-hotel-server1.vercel.app/bookings/${_id}`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'
@@ -153,7 +153,7 @@ const UpdateBookings = () => {
             };
     
             // send update data to the backend
-            fetch(`http://localhost:5000/bookings/${_id}`, {
+            fetch(`https://ass11-hotel-server1.vercel.app/bookings/${_id}`, {
                 method: 'PUT',
                 headers: {
                     'content-type': 'application/json'
@@ -207,7 +207,7 @@ const UpdateBookings = () => {
     //     if (daysDifference > 1) {
     //         // Implement cancellation logic here        
     //             // send update data to the backend
-    //             fetch(`http://localhost:5000/bookings/${_id}`, {
+    //             fetch(`https://ass11-hotel-server1.vercel.app/bookings/${_id}`, {
     //                 method: 'PUT',
     //                 headers: {
     //                     'content-type': 'application/json'
