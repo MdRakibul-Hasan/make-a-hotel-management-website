@@ -7,6 +7,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import app from "../firebase.config";
 const auth = getAuth(app)
 import Helmet from 'react-helmet';
+import axios from "axios";
 
 const Login = () => {
 
@@ -62,7 +63,21 @@ navigate(location?.state ? location.state : '/');
           });
       console.log(result.user);
       notify2();
-      navigate(location?.state ? location.state : '/');
+      // navigate(location?.state ? location.state : '/');
+
+      // get access token
+const loggedInUser = result.user;
+const user = { email };
+
+axios.post('http://localhost:5000/jwt', loggedInUser, {withCredentials:true})
+      .then(res =>{
+        console.log('token response',res.data);
+
+if(res.data.success){
+  navigate(location?.state ? location.state : '/');
+}
+
+      })
 
         })
         .catch( error => {

@@ -58,13 +58,13 @@ const router = createBrowserRouter([
       },
       {
         path: '/updateBookings/:id',
-        element: <UpdateBookings></UpdateBookings>,
+        element: <ProtectedRoute><UpdateBookings></UpdateBookings></ProtectedRoute>,
         loader: ({params})=>fetch(`http://localhost:5000/bookings/${params.id}`),
         
       },
       {
         path: '/review/:id',
-        element: <Review></Review>,
+        element: <UpdateBookings><Review></Review></UpdateBookings>,
         loader: ({params})=>fetch(`http://localhost:5000/rooms/${params.id}`),
         
       },
