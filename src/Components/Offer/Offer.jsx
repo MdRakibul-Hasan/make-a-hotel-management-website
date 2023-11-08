@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { Parallax } from "react-parallax";
 
 
 const Offer = () => {
@@ -37,44 +38,54 @@ const Offer = () => {
 
 
     return (
-        <div className=' bg-orange-300 mt-0'>
-            <div><h2 className="text-center font-extrabold text-3xl pt-28 pb-4 text-orange-700">Grab Your Offer Before It's Gone!</h2>        
+<Parallax strength={600} bgImage="https://ebook.projectbd.com/wp-content/uploads/2023/11/home-image-3.jpg">
+<div className='pb-10'>
+            
+            <div><h2 className="text-center italic font-bold text-4xl pt-20 pb-2 text-white">30% OFF</h2>        
+            </div>
+            <div><h2 className="text-center font-extrabold text-3xl pt-2 pb-4 text-white">Grab Your Offer Before It's Gone!</h2>        
             </div>
 
-<div className="flex justify-center pb-14">
-<div className="grid grid-flow-col gap-5 text-center auto-cols-max text-orange-700">
+<div className="flex justify-center pb-8">
+<div className="grid grid-flow-col gap-5 text-center auto-cols-max text-white">
       <div className="flex flex-col">
-        <span className="countdown font-mono text-5xl text-orange-700">
+        <span className="countdown font-mono text-5xl text-white">
           <span style={{ "--value": days }}>{days}</span>
         </span>
         days
       </div>
       <div className="flex flex-col">
-        <span className="countdown font-mono text-5xl text-orange-700">
+        <span className="countdown font-mono text-5xl text-white">
           <span style={{ "--value": hours }}>{hours}</span>
         </span>
         hours
       </div>
       <div className="flex flex-col">
-        <span className="countdown font-mono text-5xl text-orange-700">
+        <span className="countdown font-mono text-5xl text-white">
           <span style={{ "--value": minutes }}>{minutes}</span>
         </span>
         min
       </div>
       <div className="flex flex-col">
-        <span className="countdown font-mono text-5xl text-orange-700">
+        <span className="countdown font-mono text-5xl text-white">
           <span style={{ "--value": seconds }}>{seconds}</span>
         </span>
         sec
       </div>
     </div>
 </div>
-
+<div className="flex justify-center items-center">
+              <Link to="/rooms">
+              <button className="mt-2 px-5 py-2 border-2 rounded-md text-white 
+              text-center">Grab Now</button>
+              </Link>
+              </div>
 {/* <div className='flex justify-center pb-16'>
     <Link to="/event"><button className="bg-blue-600 text-white text-lg py-2 px-4 rounded-lg hover:bg-blue-800"> Make Event</button></Link>
 </div> */}
 
         </div>
+</Parallax>
     );
 };
 

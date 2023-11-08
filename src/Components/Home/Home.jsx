@@ -28,7 +28,8 @@ useEffect(() => {
 <Helmet><title>Home</title></Helmet>
 
 <div className="para">
-<Parallax strength={600} bgImage="https://ebook.projectbd.com/wp-content/uploads/2023/11/home-image-1.jpg">
+<Parallax strength={300} className="parallax"
+bgImage="https://ebook.projectbd.com/wp-content/uploads/2023/11/home-image-1.jpg">
   <div className="content">
       <div className="text-content">
               <h2 className=" text-5xl font-bold text-white text-center">Welcome to New Hotel</h2>
@@ -69,30 +70,30 @@ useEffect(() => {
 {/* Featured room */}
 <h2 className="text-center text-2xl italic mt-20 py-4 font-light">Featured Rooms</h2>
 <h2 className="text-center text-5xl mb-10 font-bold">BOTH BUSINESS & PLEASURE</h2>
-<div className="flex justify-center gap-3 py-16">
-  <div className=" h-[50vh] w-[30%] bg-cover bg-[url('https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&q=60&w=900&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aG90ZWwlMjByb29tc3xlbnwwfHwwfHx8MA%3D%3D')]">
-<div className="flex flex-col justify-center items-center">
-<Link to="/rooms">
+<div className=" max-w-[1200px] flex justify-center gap-3 py-16 max-md:flex-col">
+  <div className="max-md:w-[80%] max-md:mx-auto h-[50vh] w-[30%] bg-cover bg-[url('https://images.unsplash.com/photo-1566665797739-1674de7a421a?auto=format&fit=crop&q=60&w=900&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8aG90ZWwlMjByb29tc3xlbnwwfHwwfHx8MA%3D%3D')]">
+<div className="h-full flex flex-col justify-end items-center p-2">
+<Link to="/rooms/6548bdc2a3508f7f4249c9e7">
               <button className="bg-black mt-2 px-5 py-2 border-2 rounded-md text-white 
-              text-center">See All Room</button>
+              text-center">Cozy Room</button>
               </Link>
 </div>
   </div>
   {/* 1st  */}
-  <div className=" h-[50vh] w-[30%] bg-cover bg-[url('https://images.unsplash.com/photo-1578683010236-d716f9a3f461?auto=format&fit=crop&q=60&w=900&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8aG90ZWwlMjByb29tc3xlbnwwfHwwfHx8MA%3D%3D')]">
-<div className="flex flex-col justify-center items-center">
-<Link to="/rooms">
+  <div className="max-md:w-[80%] max-md:mx-auto  h-[50vh] w-[30%] bg-cover bg-[url('https://images.unsplash.com/photo-1578683010236-d716f9a3f461?auto=format&fit=crop&q=60&w=900&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8aG90ZWwlMjByb29tc3xlbnwwfHwwfHx8MA%3D%3D')]">
+<div className="h-full flex flex-col justify-end items-center p-2">
+<Link to="/rooms/6548bdc2a3508f7f4249c9e5">
               <button className="bg-black mt-2 px-5 py-2 border-2 rounded-md text-white 
-              text-center">See All Room</button>
+              text-center">Deluxe Room</button>
               </Link>
 </div>
   </div>
    {/* 2nd  */}
-  <div className=" h-[50vh] w-[30%] bg-cover bg-[url('https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&q=60&w=900&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8aG90ZWwlMjByb29tc3xlbnwwfHwwfHx8MA%3D%3D')]">
-<div className="flex flex-col justify-center items-center">
-<Link to="/rooms">
+  <div className="max-md:w-[80%] max-md:mx-auto  h-[50vh] w-[30%] bg-cover bg-[url('https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&q=60&w=900&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8aG90ZWwlMjByb29tc3xlbnwwfHwwfHx8MA%3D%3D')]">
+<div className="h-full flex flex-col justify-end items-center p-2">
+<Link to="/rooms/6548bdc2a3508f7f4249c9e6">
               <button className="bg-black mt-2 px-5 py-2 border-2 rounded-md text-white 
-              text-center">See All Room</button>
+              text-center">Single Room</button>
               </Link>
 </div>
   </div>
@@ -100,7 +101,9 @@ useEffect(() => {
 </div>
 
 {/* count down offers */}
+<div className="pt-14">
 <Offer></Offer>
+</div>
 
 
 {/* service card start here */}
