@@ -123,21 +123,79 @@ bgImage="https://ebook.projectbd.com/wp-content/uploads/2023/11/home-image-1.jpg
 </div>
 
 </div> */}
-<div className="pt-24 pb-14 max-md:pt-14"><SliderAdsForHome></SliderAdsForHome></div>
+{/* <div className="pt-24 pb-14 max-md:pt-14"><SliderAdsForHome></SliderAdsForHome></div> */}
 
 
 
 
 {/* image gallery starts */}
-<div><h2 className="text-center font-bold text-3xl mt-12 mb-10">Find Your Perfect Tech Match with Our Top-Notch Selection </h2></div>
-<div className="py-12"><ImageGallery></ImageGallery></div>
+{/* <div><h2 className="text-center font-bold text-3xl mt-12 mb-10">Find Your Perfect Tech Match with Our Top-Notch Selection </h2></div>
+<div className="py-12"><ImageGallery></ImageGallery></div> */}
 
 
 {/* our sponser */}
 
-<div className=" bg-white">
+{/* <div className=" bg-white">
 <h2 className="text-center font-bold text-2xl mt-12 mb-4">Our Sponsors </h2>
     <Sponser></Sponser>
+</div> */}
+
+
+<div className=" bg-white">
+<h2 className="text-center text-2xl italic mt-20 py-4 font-light">Testimonials</h2>
+<h2 className="text-center text-5xl mb-10 font-bold">WORDS FROM OUR GUEST</h2>
+    
+    <div className=" flex justify-between gap-8 max-w-[1200px]
+    max-md:flex-col mx-auto p-10">
+
+      <div className="flex flex-col h-[80vh] max-md:h-[70vh] justify-center items-center border-2 p-5 gap-2">
+        <img className=" rounded-full w-[52%] max-md:w-[25%]" src="https://ebook.projectbd.com/wp-content/uploads/2023/11/test2.jpg" />
+        <div className="rating rating-sm">
+  <input type="radio" name="rating-5" className="mask mask-star-2 bg-orange-400" />
+  <input type="radio" name="rating-5" className="mask mask-star-2 bg-orange-400" />
+  <input type="radio" name="rating-5" className="mask mask-star-2 bg-orange-400" />
+  <input type="radio" name="rating-5" className="mask mask-star-2 bg-orange-400" />
+  <input type="radio" name="rating-5" className="mask mask-star-2 bg-orange-400" checked />
+</div>
+<div className="w-full border-b border-gray-300"></div>
+        <h2 className=" text-lg font-semibold pt-2">Nathan Flex</h2>
+        <h5 className=" text-xs font-normal text-orange-800">California,USA</h5>
+
+      </div>
+      {/* --------------------- */}
+      <div className="flex flex-col h-[80vh] max-md:h-[70vh] justify-center items-center border-2 p-5 gap-2">
+        <img className=" rounded-full w-[50%] max-md:w-[25%]" src="https://ebook.projectbd.com/wp-content/uploads/2023/11/test3.jpg" />
+        <div className="rating rating-sm">
+  <input type="radio" name="rating-5" className="mask mask-star-2 bg-orange-400" />
+  <input type="radio" name="rating-5" className="mask mask-star-2 bg-orange-400" />
+  <input type="radio" name="rating-5" className="mask mask-star-2 bg-orange-400" />
+  <input type="radio" name="rating-5" className="mask mask-star-2 bg-orange-400" />
+  <input type="radio" name="rating-5" className="mask mask-star-2 bg-orange-400" checked />
+</div>
+<div className="w-full border-b border-gray-300"></div>
+        <h2 className=" text-lg font-semibold pt-2">Michael Williams</h2>
+        <h5 className=" text-xs font-normal text-orange-800">CEO, High Rise Construction</h5>
+
+      </div>
+      {/* --------------------- */}
+      <div className="flex flex-col h-[80vh] max-md:h-[70vh] justify-center items-center border-2 p-5 gap-2">
+        <img className=" rounded-full w-[55%] max-md:w-[25%]" src="https://ebook.projectbd.com/wp-content/uploads/2023/11/test1.jpg" />
+        <div className="rating rating-sm">
+  <input type="radio" name="rating-5" className="mask mask-star-2 bg-orange-400" />
+  <input type="radio" name="rating-5" className="mask mask-star-2 bg-orange-400" />
+  <input type="radio" name="rating-5" className="mask mask-star-2 bg-orange-400" />
+  <input type="radio" name="rating-5" className="mask mask-star-2 bg-orange-400" />
+  <input type="radio" name="rating-5" className="mask mask-star-2 bg-orange-400" checked />
+</div>
+<div className="w-full border-b border-gray-300"></div>
+        <h2 className=" text-lg font-semibold pt-2">Emma Johnson</h2>
+        <h5 className=" text-xs font-normal text-orange-800">Bristol, UK</h5>
+
+      </div>
+      {/* --------------------- */}
+    </div>
+
+
 </div>
 
         </div>
