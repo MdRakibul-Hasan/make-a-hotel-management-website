@@ -9,13 +9,14 @@ Most useful feature given below:
 - Login/Registration. 
 - Google Auth login.
 - Private/Protected route.
-- Listed by different Brands.
-- Specific products based on brand.
-- Add product.
+- JWT token based security system.
+- Showing room availability.
+- Specific check-in-date and check-out-date by date picker.
+- Add review and rating.
 - Get offer with count down time.
-- Update any product data.
+- Update any room booking data.
 - Directly control data from UI to MongoDB.
 - Live notification of every activities. 
 
-[You can visit this demo website](https://google.com/).
+[You can visit this demo website](https://simple-firebase-practice-18c86.web.app).
 
