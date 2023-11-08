@@ -74,6 +74,7 @@ else if(!/[@!#$%*&]/.test(password)){
 
 // console.log(email, password, name, image);
 createUser(email, password, name, image)
+
     .then(result => {
         const notify2 = () => toast.success('Congratulation, Your registration is Successful', {
             position: "top-right",
@@ -134,7 +135,7 @@ createUser(email, password, name, image)
     />
   </div>
 
-  {/* <div className="mb-4">
+  <div className="mb-4">
     <label className="block text-white">Profile Picture</label>
     <input
     className="border border-gray-300 p-2 w-full rounded bg-white"
@@ -143,7 +144,7 @@ createUser(email, password, name, image)
       onChange={(e) => setImage(e.target.files[0])}
       required
     />
-  </div> */}
+  </div>
           
           <div className="mb-4">
             <label className="block text-white">

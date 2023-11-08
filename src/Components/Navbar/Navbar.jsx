@@ -71,7 +71,7 @@ isPending ? "pending" : isActive ? "text-orange-500 font-bold" : "text-white"}>M
 }
           </div>
 
-{/*  
+ 
 
 <div className="flex justify-center items-center mx-1 max-md:hidden">
 {
@@ -83,19 +83,19 @@ isPending ? "pending" : isActive ? "text-orange-500 font-bold" : "text-white"}>M
 
  }
 
-{
+{/* {
  user ? 
  <h2 className="text-black text-xs">{user.displayName}</h2>
     :
     <h2 className="text-black text-xs">No User</h2>
 
- }
+ } */}
 
 
 
 
 
-</div> */}
+</div>
 
 
          
@@ -142,7 +142,7 @@ isPending ? "pending" : isActive ? "text-orange-600 font-bold" : "text-black"}>M
 
 
 
-{/* <div className="flex my-2">
+<div className="flex my-2">
 {
  user ? 
  <img className=" bg-white rounded-full w-[6vh] mx-1" src={user.photoURL} alt="" />
@@ -152,17 +152,17 @@ isPending ? "pending" : isActive ? "text-orange-600 font-bold" : "text-black"}>M
 
  }
 
-{
+{/* {
  user ? 
  <h2 className="text-black text-xs">{user.displayName}</h2>
     :
     <h2 className="text-black text-xs">No User</h2>
 
- }
+ } */}
 
 
 
-</div> */}
+</div>
 {
   user?.email ?
   <NavLink to="/bookings" className={({isActive, isPending}) =>
